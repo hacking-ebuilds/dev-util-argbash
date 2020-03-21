@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+
+<pkgmetadata>
+	<maintainer type="person">
+		<email>overlay-maintainer@mad-hacking.net</email>
+		<name>Overlay Maintainer</name>
+	</maintainer>
+	<upstream>
+		<remote-id type="github">matejak/argbash</remote-id>
+		<maintainer>
+			<email>default-package-maintainer@mad-hacking.net</email>
+			<name>Default Package Maintainer</name>
+		</maintainer>
+		<bugs-to>https://github.com/hacking-ebuilds/dev-util-argbash/issues</bugs-to>
+		<doc>https://argbash.io/</doc>
+	</upstream>
+	<longdescription lang="en">
+		Argbash is a code generator - write a short definition and let Argbash modify
+		your script so it magically starts to expose a command-line interface to your
+		users and arguments passed using this interface as variables.
+	</longdescription>
+</pkgmetadata>
