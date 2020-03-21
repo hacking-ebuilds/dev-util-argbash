@@ -28,7 +28,7 @@ DEPEND="test? ( ${RDEPEND} )"
 S="${WORKDIR}/${P}/resources"
 
 src_test() {
-	emake test || die "emake test failed"
+	emake unittests || die "emake unittests failed"
 }
 
 src_prepare() {
