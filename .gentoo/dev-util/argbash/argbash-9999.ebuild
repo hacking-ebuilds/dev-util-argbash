@@ -25,6 +25,8 @@ RDEPEND=">=app-shells/bash-3.0
 	>=sys-devel/autoconf-2.63"
 DEPEND="test? ( ${RDEPEND} )"
 
+S="${WORKDIR}/${P}/resources"
+
 src_test() {
 	emake test || die "emake test failed"
 }
