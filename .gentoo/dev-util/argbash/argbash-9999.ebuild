@@ -12,7 +12,7 @@ if [[ ${PV} = *9999* ]]; then
 	EGIT_REPO_URI="https://github.com/matejak/argbash.git"
 	EGIT_BRANCH="master"
 else
-	SRC_URI="https://github.com/matejak/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+	SRC_URI="https://github.com/matejak/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 fi
 
 KEYWORDS=""
