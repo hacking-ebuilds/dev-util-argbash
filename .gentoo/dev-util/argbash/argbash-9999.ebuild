@@ -21,9 +21,9 @@ SLOT="0"
 
 RESTRICT="!test? ( test )"
 
-RDEPEND=">=app-shells/bash-3.0:*
-	>=sys-devel/autoconf-2.63:*"
-DEPEND="test? ( ${RDEPEND} )"
+RDEPEND=">=app-shells/bash-3.0:*"
+DEPEND=">=sys-devel/autoconf-2.63:*
+	test? ( ${RDEPEND} )"
 
 S="${WORKDIR}/${P}/resources"
 
