@@ -5,7 +5,7 @@ EAPI=7
 
 DESCRIPTION="Bash argument parsing code generator"
 HOMEPAGE="https://github.com/matejak/argbash"
-LICENSE="BSD-3"
+LICENSE="BSD"
 
 if [[ ${PV} = *9999* ]]; then
 	inherit git-r3
