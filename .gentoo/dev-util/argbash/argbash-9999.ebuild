@@ -23,6 +23,7 @@ RESTRICT="!test? ( test )"
 
 RDEPEND=">=app-shells/bash-3.0:*"
 DEPEND=">=sys-devel/autoconf-2.63:*
+	>=dev-python/docutils-0.16:*
 	test? ( ${RDEPEND} )"
 
 S="${WORKDIR}/${P}/resources"
@@ -34,6 +35,7 @@ src_test() {
 src_prepare() {
 	default
 	sed -Ei 's#m4dir=/\$\(PREFIXED_LIBDIR\)#m4dir=/\$(EROOT)usr/lib#' Makefile || die 'sed failed'
+	sed -Ei 's#rst2man#rst2man.py#' Makefile || die 'sed failed'
 }
 
 src_install() {
